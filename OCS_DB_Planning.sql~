@@ -1,0 +1,13 @@
+/*LZ ODOCS Database*/
+
+Table 1: Board_Identification
+board_id Tinyint, FPGA_Num Tinyint, channel_Num Tinyint
+
+Table 2: lnNPHvsTrigW_func_parameters
+board_id Tinyint,p0 Float(3,6),p1 Float(3,6),p2 Float(3,6),p3 Float(3,6)
+
+Table 3: WidthsetvsTrigW_step_func_parameters
+board_id Tinyint, W5p0 Float(3,6), W5p1 Float(3,6), W6p0 Float(3,6), W6p1 Float(3,6), W7p0 Float(3,6), W7p1 Float(3,6), W8p0 Float(3,6), W8p1 Float(3,6), W9p0 Float(3,6), W9p1 Float(3,6), W10p0 Float(3,6), W10p1 Float(3,6), W11p0 Float(3,6), W11p1 Float(3,6), W12p0 Float(3,6), W12p1  Float(3,6),
+
+Table 4: TrigWvslnNph_func_parameters
+board_id Tinyint,p0 Float(3,6),p1 Float(3,6),p2 Float(3,6),p3  Float(3,6),
