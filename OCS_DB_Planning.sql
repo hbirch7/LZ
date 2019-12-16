@@ -55,9 +55,10 @@ CREATE TABLE TrigWvslnNph(
         REFERENCES Board_Identification (board_id)
 );
 
-LOAD DATA LOCAL 
-INFILE '/tmp/foo.txt' 
-INTO TABLE Board_Identification COLUMNS TERMINATED BY '\t';
+LOAD DATA LOCAL INFILE '/home/burdin/OCS/board_id.txt' INTO TABLE Board_Identification COLUMNS TERMINATED BY '\t';
 
+LOAD DATA LOCAL INFILE '/home/burdin/OCS/lnNphvsTrigW_parameters.txt' INTO TABLE lnNPHvsTrigW COLUMNS TERMINATED BY '\t';
 
-LOAD DATA LOCAL
+LOAD DATA LOCAL INFILE '/home/burdin/OCS/WidthsetvsTrigW_parameters.txt' INTO TABLE WidthsetvsTrigW COLUMNS TERMINATED BY '\t';
+
+LOAD DATA LOCAL INFILE '/home/burdin/OCS/TrigWvslnNph_parameters.txt' INTO TABLE TrigWvslnNph COLUMNS TERMINATED BY '\t';
